@@ -1,22 +1,23 @@
 {
-  "name": "foundations.design",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/foundations-design/Website.git"
-  },
-  "author": "Earl Man <np.foundations@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/foundations-design/Website/issues"
-  },
-  "homepage": "https://github.com/foundations-design/Website#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  }
+    "name": "foundations.design",
+    "version": "1.0.0",
+    "description": "",
+    "main": ".eleventy.js",
+    "scripts": {
+        "start": "npx eleventy --serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/foundations-design/Website.git"
+    },
+    "author": "Earl Man <np.foundations@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/foundations-design/Website/issues"
+    },
+    "homepage": "https://github.com/foundations-design/Website#readme",
+    "dependencies": {
+        "@11ty/eleventy": "^0.12.1"
+    }
 }
