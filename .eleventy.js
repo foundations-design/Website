@@ -1,10 +1,10 @@
 module.exports = config => {
 
-    const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
+    const sortByDisplayOrder = require('./piccallili-course/src/utils/sort-by-display-order.js');
 
     // Filters
-    const dateFilter = require('./src/filters/date-filter.js')
-    const w3DateFilter = require('./src/filters/w3-date-filter.js')
+    const dateFilter = require('./piccallili-course/src/filters/date-filter.js')
+    const w3DateFilter = require('./piccallili-course/src/filters/w3-date-filter.js')
 
     // Add filters
     config.addFilter('dateFilter', dateFilter);
@@ -31,7 +31,7 @@ module.exports = config => {
         htmlTemplateEngine: 'njk',
         dir: {
 
-            input: 'src',
+            input: 'piccallili-course/src',
             output: 'dist'
         }
     }
