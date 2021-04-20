@@ -2,6 +2,12 @@ module.exports = config => {
 
     const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 
+    // Returns a collection of blog posts in reverse date order
+    config.addCollection('blog', collection => {
+        return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+    });
+
+
     // Returns work items, sorted by display order
     config.addCollection('work', collection => {
         return sortByDisplayOrder(collection.getFilteredByGlob('./src/work/*.md'))
