@@ -1,3 +1,5 @@
+const rssPlugin = require('@11ty/eleventy-plugin-rss');
+
 module.exports = config => {
 
     const sortByDisplayOrder = require('./piccallili-course/src/utils/sort-by-display-order.js');
@@ -9,6 +11,9 @@ module.exports = config => {
     // Add filters
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
+
+    // Plugins
+    config.addPlugin(rssPlugin);
 
     // Returns a collection of blog posts in reverse date order
     config.addCollection('blog', collection => {
