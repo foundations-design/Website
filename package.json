@@ -1,33 +1,33 @@
 {
-    "name": "foundations.design",
-    "version": "1.0.0",
-    "description": "",
-    "main": ".eleventy.js",
-    "scripts": {
-        "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-        "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/foundations-design/Website.git"
-    },
-    "author": "Earl Man <np.foundations@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/foundations-design/Website/issues"
-    },
-    "homepage": "https://github.com/foundations-design/Website#readme",
-    "dependencies": {
-        "@11ty/eleventy": "^0.12.1",
-        "@11ty/eleventy-cache-assets": "^2.1.0",
-        "@11ty/eleventy-plugin-rss": "^1.1.1",
-        "concurrently": "^6.0.2",
-        "get-google-fonts": "^1.2.2",
-        "gulp": "^4.0.2",
-        "gulp-clean-css": "^4.3.0",
-        "gulp-imagemin": "^7.1.0",
-        "gulp-sass": "^4.1.0",
-        "moment": "^2.29.1",
-        "sass": "^1.32.11"
-    }
+  "name": "foundations.design",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "npx gulp && npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foundations-design/Website.git"
+  },
+  "author": "Earl Man <np.foundations@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foundations-design/Website/issues"
+  },
+  "homepage": "https://github.com/foundations-design/Website#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-cache-assets": "^2.1.0",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "concurrently": "^6.0.2",
+    "get-google-fonts": "^1.2.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "moment": "^2.29.1",
+    "sass": "^1.32.11"
+  }
 }
