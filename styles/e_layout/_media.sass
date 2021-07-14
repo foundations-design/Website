@@ -15,6 +15,10 @@ $screen-xl-min: 1440px // Desktop Computers
 /*=      Create Mixin to @include Media Query       =
 /*=================================================*/        
 
+@mixin sm
+    @media (max-width: #{$screen-md-min})
+        @content
+
 @mixin md
     @media only screen and (min-width: #{$screen-md-min})
         @content
