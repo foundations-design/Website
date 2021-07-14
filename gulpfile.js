@@ -10,7 +10,7 @@ const sass = require("./gulp-tasks/sass.js");
 // prevent the task being run when we run `gulp watch`, but it
 // will run when a file changes.
 const watcher = () => {
-   watch("./styles/*.sass", { ignoreInitial: true }, sass);
+   watch("./styles/**/*.sass", { ignoreInitial: true }, sass);
    // watch("./src/images/**/*", { ignoreInitial: true }, images);
 };
 
