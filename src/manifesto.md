@@ -6,7 +6,7 @@ title: The Foundations Manifesto
 # The Foundations Manifesto
 
 The world is becoming digitized.<br>
-Our phones are millions of times faster than the computers that got us to the moon; We create 2.5 quintillion bytes of data every day; and, for the first time in history, we have the power to connect the thoughts and feelings of every person into one network.
+Our phones are millions of times faster than the computers that got us to the moon; we create 2.5 quintillion bytes of data every day; and, for the first time in history, we have the power to connect the thoughts and feelings of every person into one network.
 
 Our tools are being used to improve productivity and foster collaboration between all peoples, and extract data and attention from an unwitting society.
 
