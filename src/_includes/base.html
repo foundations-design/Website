@@ -12,7 +12,8 @@
       <link rel="stylesheet" media="print" href="/fonts/fonts.css" onload="this.media='all'" />
    </head>
 
-   <body class="{{ page.fileSlug }}">
+   <!--calling page.fileSlug doesn't return "index"-->
+   <body class="{{page.filePathStem.substring(1)}}">
       <div class="content">{{ content | safe }}</div>
    </body>
 </html>
