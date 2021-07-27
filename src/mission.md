@@ -1,9 +1,9 @@
 ---
 layout: base.html
-title: The Foundations Manifesto
+title: The Foundations Mission
 ---
 
-# The Foundations Manifesto
+# The Foundations Mission
 
 The world is becoming digitized.<br>
 Our phones are millions of times faster than the computers that got us to the moon; we create 2.5 quintillion bytes of data every day; and, for the first time in history, we have the power to connect the thoughts and feelings of every person into one network.
@@ -12,7 +12,7 @@ Our tools are being used to improve productivity and foster collaboration betwee
 
 For better or for worst, these tools are transforming humanity.
 
-**Foundations Design promotes technology<br>
+**Foundations promotes technology<br>
 that supports people and empowers physical life,<br>
 rather than tech that distracts us<br>
 and monopolizes our attention.<br>
