@@ -25,6 +25,34 @@ body
 /*=           3) Page Styles                 =*/
 /*===============================================*/
 
+body.staging-protocol
+   width: 100%
+   display: grid
+   place-items: center
+   margin-top: var(--space-xl)
+   margin-bottom: var(--space-xl)
+   
+   .content
+      max-width: 800px
+
+   h1
+      text-align: center
+      margin-bottom: var(--space-md)
+   
+   ol 
+      // list-style: outside
+      font-size: var(--font-xl)
+
+      li
+         padding-left: var(--space-sm)
+         margin-bottom: var(--space-xs)
+         @include text(lg)
+      
+      ::marker
+         font-family: var(--font-secondary)
+         font-weight: 500
+         @include text(xl)
+
 body.mission
    width: 100%
    display: grid
