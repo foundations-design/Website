@@ -6,11 +6,11 @@ title: The Foundations Mission
 # The Foundations Mission
 
 The world is becoming digitized.<br>
-Our phones are millions of times faster than the computers that got us to the moon; we create 2.5 quintillion bytes of data every day; and, for the first time in history, we have the power to connect the thoughts and feelings of every person into one network.
+Our phones are 1,000,000<span style="font-size: .8em;">x</span> faster than the computers that got us to the moon; we create 2,500,000,000 GBs of data every day; and, for the first time in history, we have the power to connect the thoughts and feelings of every person into one network.
 
-Our tools are being used to improve productivity and foster collaboration between all peoples, and extract data and attention from an unwitting society.
+This network is being used to improve productivity and foster collaboration between all peoples, and extract data and attention from an unwitting society.
 
-For better or for worst, these tools are transforming humanity.
+For better or for worst, it's transforming humanity.
 
 **Foundations promotes technology<br>
 that supports people and empowers physical life,<br>
@@ -20,4 +20,4 @@ We support practices that improve our sensibilities<br>
 and avoid interfaces that keep us staring at a screen.**
 
 **Just like you, we hope for a better future.<br>
-In our humble opinion, that future begins on Earth.**
+That future begins on Earth.**
