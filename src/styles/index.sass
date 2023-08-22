@@ -12,17 +12,12 @@
 /*=           2) General Styles                 =*/
 /*===============================================*/
 
-body
-   background-color: var(--color-b)
-   margin-top: var(--space-lg)
-   padding-left: var(--space-sm)
-   padding-right: var(--space-sm)
-   background-image: url("/images/paper_texture.png") // Texture
-   background-repeat: repeat // texture
-
 /*===============================================*/
 /*=           3) Page Styles                 =*/
 /*===============================================*/
+
+:root
+   --logo-fill-1: #485074
 
 body.staging-protocol
    width: 100%
@@ -89,15 +84,27 @@ body.index
       font-size: 14px
 
    h1
-      @include text(3xl)
       font-weight: normal
-      text-shadow: rgba(72, 80, 116, 0.25) 0px 0px 4px
+      color: #485074
+      text-align: center
+      font-family: Overpass Mono
+      font-size: 3rem
+      line-height: 100%
+      font-weight: 300
+      letter-spacing: -0.08em
+      margin-top: var(--space-sm)
 
    h2
-      @include text(lg)
-      font-weight: normal
-      font-family: var(--font-primary)
-      text-shadow: rgba(72, 80, 116, 0.25) 0px 0px 4px
+      margin-top: var(--space-3xs)
+      color: #485074
+      font-family: inter
+      text-transform: uppercase
+      text-align: center
+      font-family: Inter
+      font-size: 1rem
+      line-height: 100%
+      letter-spacing: 0.5rem
+      font-weight: 400
 
    .content
       text-align: center
@@ -105,3 +112,28 @@ body.index
    .logo
       // margin-bottom: var(--space-sm)
       width: 250px
+
+   .page
+      height: 100vh
+      width: 100vw
+      display: grid
+      place-items: center
+      place-content: center
+      padding-left: var(--space-sm)
+      padding-right: var(--space-sm)
+      background-color: var(--color-b)
+      position: relative
+
+      .page-inner
+         position: fixed
+         z-index: 10
+
+   .page.two
+      background-color: #282828
+
+   .active
+      *
+         color: white
+
+      svg
+         fill: url(#paint0)

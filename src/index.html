@@ -3,6 +3,33 @@ layout: base.html
 title: Foundations Design
 ---
 
-<img src="/images/foundations-logo.svg" alt="logo" class="logo" />
-<h1>foundations</h1>
-<h2>builds clean and durable products</h2>
+<div class="page one" id="page-one">
+  <div class="page-inner">
+    {% include "foundations-logo-2.svg"%}
+    <h1>foundations</h1>
+    <h2>webdesign</h2>
+  </div>
+</div>
+
+<div class="page two" id="page-two">
+
+</div>
+
+<script>
+  window.addEventListener('scroll', function () {
+    // Check if #page-two is in the viewport
+    const pageTwoRect = document.querySelector('#page-two').getBoundingClientRect();
+
+    const pageInnerElem = document.querySelector('.page-inner');
+    const pageInnerRect = document.querySelector('.page-inner').getBoundingClientRect()
+
+    if (pageTwoRect.top <= pageInnerRect.top) {
+      // The top of #page-two is in the viewport, add the class to .page-inner
+      pageInnerElem.classList.add('active');
+    } else {
+      // The top of #page-two is not in the viewport, remove the class from .page-inner
+      pageInnerElem.classList.remove('active');
+    }
+  });
+
+</script>
