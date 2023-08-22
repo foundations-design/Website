@@ -16,8 +16,9 @@ title: Foundations Design
 </div>
 
 <script>
-  window.addEventListener('scroll', function () {
-    // Check if #page-two is in the viewport
+
+  function setStyles() {
+
     const pageTwoRect = document.querySelector('#page-two').getBoundingClientRect();
 
     const pageInnerElem = document.querySelector('.page-inner');
@@ -30,6 +31,16 @@ title: Foundations Design
       // The top of #page-two is not in the viewport, remove the class from .page-inner
       pageInnerElem.classList.remove('active');
     }
+  }
+
+  // Touchscreen
+  window.addEventListener('touchend', function () {
+    setStyles()
   });
+
+  // Non-Touchscreen
+  if (!window.matchMedia("(pointer: coarse)").matches) {
+    window.addEventListener('scroll', setStyles);
+  }
 
 </script>
