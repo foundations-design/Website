@@ -13,26 +13,10 @@ title: Foundations Design
 
   <div class="page two" id="page-two" data-color="theme2"></div>
 
-  {# <script>
-  window.addEventListener('scroll', function () {
-    // Check if #page-two is in the viewport
-    const pageTwoRect = document.querySelector('#page-two').getBoundingClientRect();
-
-    const pageInnerElem = document.querySelector('.page-inner');
-    const pageInnerRect = document.querySelector('.page-inner').getBoundingClientRect()
-
-    if (pageTwoRect.top <= pageInnerRect.top) {
-      // The top of #page-two is in the viewport, add the class to .page-inner
-      pageInnerElem.classList.add('active');
-    } else {
-      // The top of #page-two is not in the viewport, remove the class from .page-inner
-      pageInnerElem.classList.remove('active');
-    }
-  });
-</script> #}
-
   <script>
     //speed up animation
+
+    gsap.defaults({duration: .5});
 
     gsap
       .utils
