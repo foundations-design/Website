@@ -2,20 +2,18 @@
 layout: base.html
 title: Foundations Design
 ---
-
-<div class="page one" id="page-one">
-  <div class="page-inner">
-    {% include "foundations-logo-2.svg"%}
-    <h1>foundations</h1>
-    <h2>webdesign</h2>
+<main>
+  <div class="page one" id="page-one" data-color="theme1">
+    <div class="page-inner">
+      {% include "foundations-logo-2.svg"%}
+      <h1>foundations</h1>
+      <h2>webdesign</h2>
+    </div>
   </div>
-</div>
 
-<div class="page two" id="page-two">
+  <div class="page two" id="page-two" data-color="theme2"></div>
 
-</div>
-
-<script>
+  {# <script>
   window.addEventListener('scroll', function () {
     // Check if #page-two is in the viewport
     const pageTwoRect = document.querySelector('#page-two').getBoundingClientRect();
@@ -31,5 +29,53 @@ title: Foundations Design
       pageInnerElem.classList.remove('active');
     }
   });
+</script> #}
 
-</script>
+  <script>
+    //speed up animation
+
+    gsap
+      .utils
+      .toArray(".page")
+      .forEach(function (elem) {
+
+        let t = elem.getAttribute('data-color');
+        let themes = {
+          theme1: [
+            "#FCFBF4", "#485074", "#485074"
+          ],
+          theme2: ["#282828", "url(#paint0)", "white"]
+        }
+
+        ScrollTrigger.create({
+          trigger: elem,
+          start: 'top 50%',
+          end: 'bottom 50%',
+          onEnter: () => {
+            gsap.to('main', {backgroundColor: themes[t][0]
+            })
+            gsap.to('svg', {
+              fill: themes[t][1],
+              duration: 0
+            })
+            gsap.to('h1, h2', {color: themes[t][2]
+            })
+          },
+          //onLeave: () => gsap.to('main', {backgroundColor: 'white'}),
+          //onLeaveBack: () => gsap.to('main', {backgroundColor: 'white'}),
+          onEnterBack: () => {
+            gsap.to('main', {backgroundColor: themes[t][0]
+            })
+            gsap.to('svg', {
+              fill: themes[t][1],
+              duration: 0
+            })
+            gsap.to('h1, h2', {color: themes[t][2]
+            })
+          },
+          // markers: true
+        });
+
+      });
+  </script>
+</main>
