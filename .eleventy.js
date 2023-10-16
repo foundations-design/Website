@@ -6,7 +6,7 @@ const { transform, browserslistToTargets } = require("lightningcss");
 module.exports = (eleventyConfig) => {
    //copy /images to dist/images
    eleventyConfig.addPassthroughCopy("./src/images");
-   eleventyConfig.addPassthroughCopy("./src/static");
+   eleventyConfig.addPassthroughCopy({ "./src/static": "." });
 
    eleventyConfig.addWatchTarget("./styles/");
 
